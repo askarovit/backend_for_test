@@ -1,0 +1,13 @@
+FROM node:10-alpine
+
+RUN mkdir /var/qr_smarty_v2
+COPY . /var/qr_smarty_v2
+WORKDIR /var/qr_smarty_v2
+
+RUN npm install --global npm@latest && \
+    npm install
+
+CMD ["npm","run", "init:submodule"]
+CMD ["npm","run", "start:prod"]
+
+

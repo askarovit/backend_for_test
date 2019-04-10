@@ -1,0 +1,17 @@
+{
+  "name": "qrsmarty",
+  "version": "1.2.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start:prod": "node ./src/app.js",
+    "init:submodule": "git submodule update --init"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3"
+  }
+}
